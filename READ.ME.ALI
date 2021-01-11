@@ -27,3 +27,9 @@ go to main / index.html.twig and edit success message and logic
 recheck in phpMyAdmin, is_verified is added there in Users table!!
 recheck in navigator /register 
 recheck confirmation mail, confirm registration and try to login !! 
+
+                    Forget password
+install resetPassword bunble => run: composer require symfonycasts/reset-password-bundle
+    run: bin/console make:reset-password => app_login => layaafzal74@gmail.com => petitesAnnonces.test
+go to login.html.twig and add resetPassword link
+    run: bin/console make:migration
