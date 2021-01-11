@@ -15,3 +15,8 @@ planning of this database => create 1st Table users 2nd reset_password_request 3
 
 Create 1st table run: bin/console make:user => Users =>yes => email => yes
                 run: bin/console make:migration
+
+                Auth_symfony
+run: bin/console make:auth => UsersAuthenticator => SecurityController => yes
+
+
