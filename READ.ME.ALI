@@ -19,4 +19,11 @@ Create 1st table run: bin/console make:user => Users =>yes => email => yes
                 Auth_symfony
 run: bin/console make:auth => UsersAuthenticator => SecurityController => yes
 
-
+now we will create registration table to connect users 
+    run: bin/console make:registration-form => yes => **no** => layaafzal74@gmail.com => petitesAnnonces.test => yes
+install mail bundle =>    run:  composer require symfonycasts/verify-email-bundle
+go to main / index.html.twig and edit success message and logic
+    run: bin/console make:migration
+recheck in phpMyAdmin, is_verified is added there in Users table!!
+recheck in navigator /register 
+recheck confirmation mail, confirm registration and try to login !! 
