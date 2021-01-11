@@ -1,0 +1,17 @@
+edit .env =>virtual mail system called mail.hog at http://127.0.0.1:8025
+
+{run: mailhog\ =>
+  -api-bind-addr 127.0.0.1:8025 \
+  -ui-bind-addr 127.0.0.1:8025 \
+  -smtp-bind-addr 127.0.0.1:1025} for virtual mail in navigator
+
+bin/console make:controller => MainController
+
+go to MainController and rename the index method route to / and app_home
+
+create database, run: bin/console doctrine:database:create
+
+planning of this database => create 1st Table users 2nd reset_password_request 3rd categories and last annonces
+
+Create 1st table run: bin/console make:user => Users =>yes => email => yes
+                run: bin/console make:migration
