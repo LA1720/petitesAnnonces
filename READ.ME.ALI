@@ -33,3 +33,12 @@ install resetPassword bunble => run: composer require symfonycasts/reset-passwor
     run: bin/console make:reset-password => app_login => layaafzal74@gmail.com => petitesAnnonces.test
 go to login.html.twig and add resetPassword link
     run: bin/console make:migration
+
+                            Finish database structure
+
+Create Categories table run: bin/console make:entity => Categories => entre =>enter=>entre=>  slug=>entre=>entre=>enter  parent=>relation=>Categories=>ManyToOne=>yes=>yes=>categories=>entre
+run: bin/consolemake:migration
+
+create Annonces table run: bin/console make:entity=>Annonces=> title=>entre=>entre=>no slug=>entre=>entre=>no content=>entre=>entre=>no created_at=>datetime=>no=> active=>boolean=>no (relation part) users=>relation=>users=>ManyToOne=>no=>yes=>annonces=>yes  =>categories=>relation=>categories=>ManyToOne=>no=>yes=>annonces=>no
+    run: bin/console make:migration
+
